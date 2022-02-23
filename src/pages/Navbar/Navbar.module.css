@@ -1,0 +1,19 @@
+#root {
+    --color-active: aliceblue;
+}
+header {
+    background: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+/*a {*/
+/*    margin-right: 10px;*/
+/*    text-decoration: none;*/
+/*    font-size: 20px;*/
+/*   */
+/*}*/
+.active {
+    color: var(--color-active);
+    text-decoration: none;
+}

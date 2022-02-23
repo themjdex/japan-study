@@ -1,14 +1,4 @@
 .App {
   text-align: center;
 }
-header {
-  background: black;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: coral;
-  font-size: 20px;
-}
+
