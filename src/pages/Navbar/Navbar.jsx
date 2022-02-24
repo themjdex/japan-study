@@ -1,8 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import classes from './Navbar.module.css';
+import './Navbar.module.css';
 
-// const setActive = ({setActive}) => setActive ? 'active-link' : '';
 
 const Navbar = () => {
     return (
@@ -12,7 +11,6 @@ const Navbar = () => {
                 <NavLink to='/grammar' >Grammar</NavLink>
                 <NavLink to='/vocabulary' >Vocabulary</NavLink>
             </header>
-            <p className={classes.active}>addasdada</p>
         </div>
     );
 };

@@ -1,0 +1,25 @@
+.container {
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto;
+}
+.levels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.levels a {
+    border: black solid 1px;
+    color: aliceblue;
+
+}
+.begin {
+    background: darkgreen;
+}
+.inter {
+    background: goldenrod;
+}
+.advan {
+    background: crimson;
+}
