@@ -1,5 +1,8 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
+import grammarList from '../../json/grammarBegginer';
+import GrammarItem from "../GrammarItem/GrammarItem";
+import classes from './BeginnerPage.module.css';
 
 const BeginnerPage = () => {
     const navigate = useNavigate();
@@ -10,8 +13,9 @@ const BeginnerPage = () => {
 
     return (
         <div>
-            <h1>popa</h1>
-            <button onClick={goBack}>Назад</button>
+            <h1>Грамматика для начинающих</h1>
+            <button onClick={goBack} className={classes.btn_Back}>Назад</button>
+            {grammarList.map(post => <GrammarItem title={post.title} id={post.id}/>)}
         </div>
     );
 };
