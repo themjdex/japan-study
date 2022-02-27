@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useNavigate} from "react-router-dom";
 import grammarList from '../../json/grammarBegginer';
 import GrammarItem from "../GrammarItem/GrammarItem";
@@ -6,6 +6,7 @@ import classes from './BeginnerPage.module.css';
 
 const BeginnerPage = () => {
     const navigate = useNavigate();
+    const [posts, setPosts] = useState(grammarList);
 
     const goBack = () => {
         navigate(-1);

@@ -9,6 +9,7 @@ import Layout from "./pages/Layout/Layout";
 import BeginnerPage from "./pages/BeginnerPage/BeginnerPage";
 import IntermediatePage from "./pages/IntermediatePage/IntermediatePage";
 import AdvancedPage from "./pages/AdvancedPage/AdvancedPage";
+import GrammarPost from "./pages/GrammarPost/GrammarPost";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path='grammar/beginner' element={<BeginnerPage/>}/>
                 <Route path='grammar/intermediate' element={<IntermediatePage/>}/>
                 <Route path='grammar/advanced' element={<AdvancedPage/>}/>
+                <Route path='grammar/:id' element={<GrammarPost />}/>
                 <Route path='vocabulary' element={<VocabularyPage/>}/>
                 <Route path='*' element={<ErrorPage/>}/>
             </Route>
